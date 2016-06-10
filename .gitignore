@@ -8,3 +8,4 @@ learningmanagement-grailsPlugins.iml
 learningmanagement.iml
 target/
 wrapper/
+test/
