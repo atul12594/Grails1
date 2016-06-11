@@ -13,3 +13,5 @@
     <label>Email id</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type= "text" name = "emailId" placeholder = "atul@gmail.com" style="padding:10px; margin:10px;"><br>
     <button type = "submit" style="background-color:blue; padding:10px; border-radius:60px; ;"><b>Submit</b></button>
 </form>
+
+
