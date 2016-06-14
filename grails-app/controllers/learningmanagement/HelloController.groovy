@@ -10,6 +10,7 @@ class HelloController {
             render(view: "signUp")
         }*/
     def signUp() {
+    session.foo = "me"
 
     }
 

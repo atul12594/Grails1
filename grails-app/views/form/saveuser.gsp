@@ -13,10 +13,12 @@
 
 <body>
 
+    <g:if test = "${recentlySaved.myfirstName}">
+        First Name = ${recentlySaved.myfirstName} <br>
+    </g:if>
 
-    <input type="text" value= ${firstName} readonly ><br>
-    <input type="text" value=${lastName} readonly><br>
-    <input type="text" value=${emailId} readonly><br>
+    Last Name = ${recentlySaved.mylastName} <br>
+    Email id = ${recentlySaved.myemailId}<br>
 
 </body>
 </html>

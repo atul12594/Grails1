@@ -4,14 +4,17 @@ class FormController {
 
     def saveuser() {
         println("Success")
-        println(params)
-       // redirect(controller: "form" , action: "thankyou" , params : [firstName : "${params.firstName}"])
-        return [firstName: params.firstName, lastName: params.lastName, emailId: params.emailId]
-    }
-    def thankyou() {
+        println session.foo
+        println params
+        User u1 = new User([myfirstName: params.firstName, mylastName: params.lastName, myemailId : params.emailId])
 
-        render("page redirected ${params.firstName}")
+        u1.my()
+
+        return [recentlySaved: u1]
+       // redirect(controller: "form" , action: "thankyou" , params : [firstName : "${params.firstName}"])
+        //return [firstName: params.firstName, lastName: params.lastName, emailId: params.emailId]
     }
+
 }
 
 
