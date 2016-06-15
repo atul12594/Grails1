@@ -7,11 +7,16 @@ class User1 {
     String myfirstName
     String mylastName
     String myemail
+    int myage
+    int count
+
 
     void my() {
         myfirstName = myfirstName.toUpperCase()
         mylastName = mylastName.toUpperCase()
         myemail = myemail.toUpperCase()
+
+
     }
 
 }

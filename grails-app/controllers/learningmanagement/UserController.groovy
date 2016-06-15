@@ -6,7 +6,9 @@ class UserController {
 
     }
     def save() {
-        User1 u1 = new  User1 ([myfirstName : params.firstName, mylastName : params.lastName, myemail : params.emailId])
+
+        params.age = params.age.toInteger();
+        User1 u1 = new  User1 ([myfirstName : params.firstName, mylastName : params.lastName, myemail : params.emailId, myage: params.age])
         u1.my()
 
         session.recentusers = u1
@@ -15,7 +17,7 @@ class UserController {
         if (!session.allusers ) {
             session.allusers = []
         }
-
+      //  session.allusers = session.allusers ?:[]
         session.allusers.add(u1)
 
             redirect(action : "show")
@@ -28,5 +30,6 @@ class UserController {
 
     def list() {
         [allusers : session.allusers]
+
     }
 }
