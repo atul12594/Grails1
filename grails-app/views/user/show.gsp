@@ -39,12 +39,16 @@
 </head>
 
 <body>
+
 <g:render template="/templates/myNavbar" ></g:render>
+<div class="container">
+
     <dl class="d1 dl-horizontal ">
         <dt>Firstname =</dt> <dd>${recentusers.myfirstName}</dd>
         <dt>Lastname = </dt><dd>${recentusers.mylastName}</dd>
         <dt>Email Id = </dt><dd>${recentusers.myemail}</dd>
         <dt>Age = </dt><dd>${recentusers.myage}</dd>
     </dl>
+</div>
 </body>
 </html>

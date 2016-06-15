@@ -37,7 +37,8 @@
             width:600px;
             padding-top:30px;
             margin-top:20px;
-            background-color:limegreen;
+            background-color:yellowgreen;
+            border-radius: 20px;
 
 
         }

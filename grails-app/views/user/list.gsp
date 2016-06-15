@@ -52,7 +52,7 @@
         <tr class="${list.myage >= 100 ? 'bg-danger' : 'bg-info'}">
 
 
-            <td >${count}</td>
+            <td >${list.id}</td>
             <td>${list.myfirstName}</td>
             <td >${list.mylastName}</td>
             <td >${list.myemail} </td>

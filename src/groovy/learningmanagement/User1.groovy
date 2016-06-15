@@ -8,7 +8,7 @@ class User1 {
     String mylastName
     String myemail
     int myage
-    int count
+    int id
 
 
     void my() {
