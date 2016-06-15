@@ -39,27 +39,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-default">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-2">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <a class="navbar-brand" href="#" id="a4">Brand</a>
-        <div class="collapse navbar-collapse " id="navbar-collapse-2">
-            <ul class="nav navbar-nav navbar-right">
-
-                <li><a href="/learningmanagement/user/create"  id="a1">Create</a></li>
-                <li><a href="/learningmanagement/user/show" id="a2" >Show</a></li>
-                <li><a href="/learningmanagement/user/list" id="a3">List</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<g:render template="/templates/myNavbar" model = "[myCurrentPage: 'Show']"></g:render>
     <dl class="d1 dl-horizontal ">
         <dt>Firstname =</dt> <dd>${recentusers.myfirstName}</dd>
         <dt>Lastname = </dt><dd>${recentusers.mylastName}</dd>

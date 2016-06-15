@@ -34,27 +34,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-default">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-2">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <a class="navbar-brand" id="a1" href="#">Brand</a>
-        <div class="collapse navbar-collapse " id="navbar-collapse-2">
-            <ul class="nav navbar-nav navbar-right">
-
-                <li><a href="/learningmanagement/user/create" id="a2">Create</a></li>
-                <li><a href="/learningmanagement/user/show" id="a3">Show</a></li>
-                <li><a href="/learningmanagement/user/list" id="a4">List</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<g:render template="/templates/myNavbar" model = "[myCurrentPage : 'List']"></g:render>
 <h1 class="text-center">List of Users</h1>
 <div class = "container">
 <table   class="table table-hover table-bordered table-condensed ">

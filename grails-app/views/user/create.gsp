@@ -53,27 +53,8 @@
 
 <body>
 
-    <nav class = "navbar navbar-default">
-        <div class = "container">
-            <div class = "navbar-header">
-                <button type = "button" class = "navbar-toggle collapsed " data-toggle="collapse" data-target = "#navbar-collapse3">
-                    <span class = "sr-only">Toggle navigation</span>
-                    <span class = "icon-bar"></span>
-                    <span class = "icon-bar"></span>
-                    <span class = "icon-bar"></span>
-                </button>
-            </div>
-            <a class="navbar-brand" id= "a1" href="#">Brand</a>
-            <div class="collapse navbar-collapse " id="navbar-collapse3">
-                <ul class="nav navbar-nav navbar-right">
+<g:render template="/templates/myNavbar" model = "[myCurrentPage : 'Create']"></g:render>
 
-                    <li><a href="/learningmanagement/user/create" id = "a2">Create</a></li>
-                    <li><a href="/learningmanagement/user/show" id = "a3">Show</a></li>
-                    <li><a href="/learningmanagement/user/list" id = "a4">List</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 <h1 class="p1 text-center"><b>Sign Up</b></h1>
 <div class = " box col-sm-offset-3 col-sm-3 ">
 <g:form name = "user" action = "save" class = "form-horizontal" >
