@@ -3,7 +3,7 @@ package learningmanagement
 class UserController {
 
     def create() {
-
+        [myCurrentPage : "Create"]
     }
     def save() {
 
@@ -25,11 +25,11 @@ class UserController {
     }
     def show() {
 
-        [recentusers : session.recentusers]
+        [recentusers : session.recentusers, myCurrentPage : "Show"]
     }
 
     def list() {
-        [allusers : session.allusers]
+        [allusers : session.allusers, myCurrentPage : "List"]
 
     }
 }

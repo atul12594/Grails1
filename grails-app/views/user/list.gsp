@@ -38,7 +38,7 @@
 <h1 class="text-center">List of Users</h1>
 <div class = "container">
 <table   class="table table-hover table-bordered table-condensed ">
-    <thead>
+    <thead style="background-color : #337ab7">
         <th>Sl. no.</th>
         <th>First Name</th>
         <th>Last Name</th>

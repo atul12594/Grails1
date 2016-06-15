@@ -39,7 +39,7 @@
 </head>
 
 <body>
-<g:render template="/templates/myNavbar" model = "[myCurrentPage: 'Show']"></g:render>
+<g:render template="/templates/myNavbar" ></g:render>
     <dl class="d1 dl-horizontal ">
         <dt>Firstname =</dt> <dd>${recentusers.myfirstName}</dd>
         <dt>Lastname = </dt><dd>${recentusers.mylastName}</dd>
