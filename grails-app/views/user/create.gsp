@@ -15,7 +15,7 @@
 
         .box {
             border:1px solid black ;
-            width: 50%;
+            width: 60%;
             margin: auto;
             padding: 4%;
             background-color:#337ab7;
@@ -34,9 +34,15 @@
 
 <body >
 
+<content tag="header1">
+    <div class="page-header text-center ">
+        <b>Sign Up</b>
+    </div>
+</content>
+<content tag="create">
 
-<div class = "container text-center">
-    <h1 class="p1"><b>Sign Up</b></h1>
+
+    <h1 class="p1"></h1>
        <div class="box row ">
         <g:form name = "user" action = "save" class = "form-horizontal" >
             <div class="form-group form-group-lg">
@@ -71,6 +77,8 @@
 
         </g:form>
         </div>
-    </div>
+
+</content>
+
 </body>
 </html>

@@ -11,8 +11,6 @@
     <title></title>
     <meta name="layout" content="abc" />
    <style>
-
-
     .c1 {
         color:#f5f5f5;
     }
@@ -21,33 +19,34 @@
 
 <body>
 %{--<g:render template="/templates/myNavbar" model = "[myCurrentPage : 'List']"></g:render>--}%
+<content tag="header3" >
+    <div class=" page-header text-center ">
+        List of Users
+    </div>
+</content>
+<content tag="listing">
 
-<div class = "container">
-    <h1 class="text-center c1">List of Users</h1>
-    <table   class="table table-hover table-bordered table-condensed ">
-        <thead style="background-color : #337ab7">
-            <th>Sl. no.</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email Id</th>
-            <th>Age</th>
-        </thead>
+        <table class="table table-hover table-bordered ">
+            <thead style="background-color : #337ab7">
+                <th>Sl. no.</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email Id</th>
+                <th>Age</th>
+            </thead>
 
-        <g:each var = "list" in = "${allusers}">
+            <g:each var = "list" in = "${allusers}">
+                <tr class="${list.myage >= 100 ? 'bg-danger' : 'bg-info'}">
+                    <td >${list.id}</td>
+                    <td>${list.myfirstName}</td>
+                    <td >${list.mylastName}</td>
+                    <td >${list.myemail} </td>
+                    <td >${list.myage}</td>
+                </tr>
 
+            </g:each>
+        </table>
 
-            <tr class="${list.myage >= 100 ? 'bg-danger' : 'bg-info'}">
-
-
-                <td >${list.id}</td>
-                <td>${list.myfirstName}</td>
-                <td >${list.mylastName}</td>
-                <td >${list.myemail} </td>
-                <td >${list.myage}</td>
-            </tr>
-
-        </g:each>
-    </table>
-</div>
+</content>
 </body>
 </html>

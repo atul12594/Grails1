@@ -13,8 +13,9 @@
     <style>
         .d1 {
             font-size: 25px;
-            padding-left:150px;
-            padding-top:25px;
+
+            padding:25px 80px 0px 80px;
+
             color : #f5f5f5;
 
 
@@ -39,16 +40,24 @@
 
 %{--<g:render template="/templates/myNavbar" ></g:render>--}%
 
-<div class="container ">
-    <h1 class="text-center b1">Signed In User</h1>
+<content tag="header2">
+    <div class="page-header text-center ">
+        Signed In User
+    </div>
+</content>
+<content tag="show">
+
         <div class="box1">
             <dl class="d1 dl-horizontal ">
-                <dt>Firstname =</dt> <dd>${recentusers.myfirstName}</dd>
-                <dt>Lastname = </dt><dd>${recentusers.mylastName}</dd>
-                <dt>Email Id = </dt><dd>${recentusers.myemail}</dd>
-                <dt>Age = </dt><dd>${recentusers.myage}</dd>
+
+                <dt>Firstname :</dt> <dd>${recentusers.myfirstName}</dd>
+                <dt>Lastname : </dt><dd>${recentusers.mylastName}</dd>
+                <dt>Email Id : </dt><dd>${recentusers.myemail}</dd>
+                <dt>Age : </dt><dd>${recentusers.myage}</dd>
             </dl>
         </div>
-</div>
+
+</content>
+
 </body>
 </html>

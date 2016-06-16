@@ -22,9 +22,9 @@
     <asset:javascript src = "bootstrap.min.js"/>
     <asset:javascript src ="jquery.min.js"/>
     <style>
-    body  {
+    /*/body  {
         background: linear-gradient(to right, black,white);
-    }
+    }*/
     .active> #a2 {
         color:#337ab7;
     }
@@ -66,6 +66,35 @@
         </div>
     </div>
 </nav>
-<g:layoutBody/>
+<div class="container text-center ">
+    <div class="row">
+    <div class="col-sm-10">
+
+
+            <g:pageProperty name="page.header1" />
+            <g:pageProperty name="page.create" />
+
+
+
+            <g:pageProperty name="page.header3"/>
+            <g:pageProperty name="page.listing"/>
+
+
+            <g:pageProperty name="page.header2"/>
+            <g:pageProperty name="page.show"/>
+
+
+    </div>
+    <div class="col-sm-2" style="border-left: 1px solid black; height: 100%;">
+        <p>gsffhsfxfhkxfhxfxxhxfx
+        hfhffxfhchcjvjkh
+        lvjfhxhcvgjvkb
+        gfhhfhjgjkbkbjkbnlnlnl;
+        kgkhhgbhkgkghklhlhjlhjolhn
+        lghghkgkgljhljhjlhlhjl;nl;
+        ljkhgkgkhkhkhjklhklhlhlh</p>
+    </div>
+    </div>
+    </div>
 </body>
 </html>
