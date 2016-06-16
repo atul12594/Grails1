@@ -9,46 +9,46 @@
 <html>
 <head>
     <title></title>
-    <meta charset="UTF-8">
-    <title></title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="js/jquery.min.css"></script>
-    <script src="js/bootstrapcdn.min.css"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <asset:stylesheet src = "bootstrap.min.css"/>
-    <asset:javascript src = "bootstrap.min.js"/>
-    <asset:javascript src ="jquery.min.js"/>
+    <meta name = "layout" content="abc" />
     <style>
         .d1 {
             font-size: 25px;
-            margin:50px 0px  0px 300px;
+            padding-left:150px;
+            padding-top:25px;
+            color : #f5f5f5;
+
 
         }
-    .navbar {
-        background-color:#337ab7;
-    }
-    #a1,#a2,#a3, #a4{
-        color:white;
-    }
+        .box1 {
+            background-color: #337ab7;
+            width:50%;
+            height:200px;
+            margin:auto;
+            border-radius: 4%;
+        }
+
+
+        .b1 {
+            color:#f5f5f5;
+         }
+
     </style>
 </head>
 
 <body>
 
-<g:render template="/templates/myNavbar" ></g:render>
-<div class="container">
+%{--<g:render template="/templates/myNavbar" ></g:render>--}%
 
-    <dl class="d1 dl-horizontal ">
-        <dt>Firstname =</dt> <dd>${recentusers.myfirstName}</dd>
-        <dt>Lastname = </dt><dd>${recentusers.mylastName}</dd>
-        <dt>Email Id = </dt><dd>${recentusers.myemail}</dd>
-        <dt>Age = </dt><dd>${recentusers.myage}</dd>
-    </dl>
+<div class="container ">
+    <h1 class="text-center b1">Signed In User</h1>
+        <div class="box1">
+            <dl class="d1 dl-horizontal ">
+                <dt>Firstname =</dt> <dd>${recentusers.myfirstName}</dd>
+                <dt>Lastname = </dt><dd>${recentusers.mylastName}</dd>
+                <dt>Email Id = </dt><dd>${recentusers.myemail}</dd>
+                <dt>Age = </dt><dd>${recentusers.myage}</dd>
+            </dl>
+        </div>
 </div>
 </body>
 </html>
