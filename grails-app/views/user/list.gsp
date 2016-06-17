@@ -19,12 +19,13 @@
 
 <body>
 %{--<g:render template="/templates/myNavbar" model = "[myCurrentPage : 'List']"></g:render>--}%
-<content tag="header3" >
-    <div class=" page-header text-center ">
-        List of Users
-    </div>
-</content>
-<content tag="listing">
+    <content tag="header" >
+
+        <strong>List of Users</strong>
+
+    </content>
+
+    <content tag="mainContent">
 
         <table class="table table-hover table-bordered ">
             <thead style="background-color : #337ab7">
@@ -36,17 +37,29 @@
             </thead>
 
             <g:each var = "list" in = "${allusers}">
-                <tr class="${list.myage >= 100 ? 'bg-danger' : 'bg-info'}">
+                <tr class="${list.age >= 100 ? 'bg-danger' : 'bg-info'}">
                     <td >${list.id}</td>
-                    <td>${list.myfirstName}</td>
-                    <td >${list.mylastName}</td>
-                    <td >${list.myemail} </td>
-                    <td >${list.myage}</td>
+                    <td>${list.firstName}</td>
+                    <td >${list.lastName}</td>
+                    <td >${list.email} </td>
+                    <td >${list.age}</td>
                 </tr>
 
             </g:each>
         </table>
 
-</content>
+    </content>
+
+    <content tag="sidebarContent">
+        <p>Instuctions</p>
+        <p>gsffhsfxfhkxfhxfxxhxfx
+        hfhffxfhchcjvjkh
+        lvjfhxhcvgjvkb
+        gfhhfhjgjkbkbjkbnlnlnl;
+        kgkhhgbhkgkghklhlhjlhjolhn
+        lghghkgkgljhljhjlhlhjl;nl;
+        ljkhgkgkhkhkhjklhklhlhlh</p>
+
+    </content>
 </body>
 </html>

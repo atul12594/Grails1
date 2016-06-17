@@ -41,23 +41,37 @@
 %{--<g:render template="/templates/myNavbar" ></g:render>--}%
 
 <content tag="header2">
-    <div class="page-header text-center ">
-        Signed In User
-    </div>
+
+      <strong>Signed In User</strong>
+
 </content>
-<content tag="show">
+    <content tag="mainContent">
 
         <div class="box1">
+            <g:if test="${recentusers}">
             <dl class="d1 dl-horizontal ">
-
-                <dt>Firstname :</dt> <dd>${recentusers.myfirstName}</dd>
-                <dt>Lastname : </dt><dd>${recentusers.mylastName}</dd>
-                <dt>Email Id : </dt><dd>${recentusers.myemail}</dd>
-                <dt>Age : </dt><dd>${recentusers.myage}</dd>
+                <dt>Firstname :</dt> <dd>${recentusers.firstName}</dd>
+                <dt>Lastname : </dt><dd>${recentusers.lastName}</dd>
+                <dt>Email Id : </dt><dd>${recentusers.email}</dd>
+                <dt>Age : </dt><dd>${recentusers.age}</dd>
             </dl>
+            </g:if>
+            <g:else>
+                oops
+            </g:else>
         </div>
 
-</content>
+    </content>
 
+    <content tag="sidebarContent">
+        <p>Instuctions</p>
+        <p>gsffhsfxfhkxfhxfxxhxfx
+        hfhffxfhchcjvjkh
+        lvjfhxhcvgjvkb
+        gfhhfhjgjkbkbjkbnlnlnl;
+        kgkhhgbhkgkghklhlhjlhjolhn
+        lghghkgkgljhljhjlhlhjl;nl;
+        ljkhgkgkhkhkhjklhklhlhlh</p>
+    </content>
 </body>
 </html>

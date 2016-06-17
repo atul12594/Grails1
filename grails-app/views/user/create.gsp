@@ -32,53 +32,73 @@
     </style>
 </head>
 
-<body >
+<body>
 
-<content tag="header1">
-    <div class="page-header text-center ">
-        <b>Sign Up</b>
-    </div>
-</content>
-<content tag="create">
+    <content tag="header">
 
+            <strong>Sign Up</strong>
 
-    <h1 class="p1"></h1>
-       <div class="box row ">
-        <g:form name = "user" action = "save" class = "form-horizontal" >
-            <div class="form-group form-group-lg">
-                <label for = "firstName" class = "col-sm-3 col-sm-offset-1 control-label" style="margin-top: 10px;">First Name</label>
-                    <div class = "col-sm-8">
-                        <g:textField name= "firstName" class="form-control" placeholder = "Enter your firstname"  style="padding:5px; margin:5px;"/>
-                    </div>
-            </div>
-            <div class = "form-group form-group-lg">
-                <label for = "lastName" class = "col-sm-3 col-sm-offset-1 control-label" style="margin-top: 10px;">Last Name</label>
-                    <div class = "col-sm-8">
-                        <g:textField name= "lastName" class = "form-control" placeholder = "Enter your lastname"  style="padding:5px; margin:5px;"/>
-                    </div>
-            </div>
-            <div class = "form-group form-group-lg">
-                <label for = "emailId" class = "col-sm-3 col-sm-offset-1 control-label" style="margin-top: 10px;">Email Id</label>
-                    <div class = "col-sm-8">
-                        <g:textField name= "emailId" class= "form-control" placeholder = "Enter your email"  style="padding:5px; margin:5px;"/>
-                    </div>
-            </div>
-            <div class = "form-group form-group-lg">
-                <label for = "age" class = "col-sm-3 col-sm-offset-1 control-label" style="margin-top: 10px;">Age</label>
-                <div class = "col-sm-8">
-                    <g:textField name= "age" class= "form-control" placeholder = "Enter your age"  style="padding:5px; margin:5px;"/>
+    </content>
+
+    <content tag="mainContent">
+
+           <div class="box ">
+            <g:form name = "user" action = "save" class = "form-horizontal" >
+                <div class="form-group form-group-lg">
+                    <label for = "firstname" class = "col-sm-3 col-sm-offset-1 control-label"
+                           style="margin-top: 10px;">First Name</label>
+                        <div class = "col-sm-8">
+                            <g:textField name= "firstname" class="form-control" placeholder = "Enter your firstname"
+                                         style="padding:5px; margin:5px;"/>
+                        </div>
                 </div>
-            </div>
-            <div class="form-group">
-                <div class="col-sm-offset-4 col-sm-8">
-                    <g:submitButton name="Submit" class = "btn btn-lg btn-block btn-success"/>
+                <div class = "form-group form-group-lg">
+                    <label for = "lastname" class = "col-sm-3 col-sm-offset-1 control-label"
+                           style="margin-top: 10px;">Last Name</label>
+                        <div class = "col-sm-8">
+                            <g:textField name= "lastname" class = "form-control" placeholder = "Enter your lastname"
+                                         style="padding:5px; margin:5px;"/>
+                        </div>
                 </div>
+                <div class = "form-group form-group-lg">
+                    <label for = "emailid" class = "col-sm-3 col-sm-offset-1 control-label"
+                           style="margin-top: 10px;">Email Id</label>
+                        <div class = "col-sm-8">
+                            <g:textField name= "emailid" class= "form-control" placeholder = "Enter your email"
+                                         style="padding:5px; margin:5px;"/>
+                        </div>
+                </div>
+                <div class = "form-group form-group-lg">
+                    <label for = "myage" class = "col-sm-3 col-sm-offset-1 control-label" style="margin-top: 10px;">
+                        Age</label>
+                    <div class = "col-sm-8">
+                        <g:textField name= "myage" class= "form-control" placeholder = "Enter your age"
+                                     style="padding:5px; margin:5px;"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-4 col-sm-8">
+                        <g:submitButton name="Submit" class = "btn btn-lg btn-block btn-success"/>
+                    </div>
+                </div>
+
+            </g:form>
             </div>
 
-        </g:form>
-        </div>
+    </content>
 
-</content>
+    <content tag="sidebarContent">
+
+        <p>Instuctions</p>
+        <p>gsffhsfxfhkxfhxfxxhxfx
+        hfhffxfhchcjvjkh
+        lvjfhxhcvgjvkb
+        gfhhfhjgjkbkbjkbnlnlnl;
+        kgkhhgbhkgkghklhlhjlhjolhn
+        lghghkgkgljhljhjlhlhjl;nl;
+        ljkhgkgkhkhkhjklhklhlhlh</p>
+
+    </content>
 
 </body>
 </html>
