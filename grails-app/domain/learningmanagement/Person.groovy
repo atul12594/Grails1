@@ -7,5 +7,8 @@ class Person {
     String email
     int age
     static constraints = {
+
+        email(email: true)
+        age(max: 200)
     }
 }

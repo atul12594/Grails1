@@ -77,12 +77,13 @@
 
             </div>
 
-            <div class="col-sm-2" style="border-left: 1px solid black; height: 100%;">
+            <div class="col-sm-2" style="border-left: 1px solid black; height: 100%; overflow:scroll ">
 
                 <g:pageProperty name="page.sidebarContent"/>
 
             </div>
         </div>
     </div>
+     
 </body>
 </html>

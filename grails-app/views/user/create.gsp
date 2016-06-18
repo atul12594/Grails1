@@ -5,7 +5,7 @@
   Time: 12:07 PM
 --%>
 
-<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page import="learningmanagement.Person" contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
     <title></title>
@@ -49,7 +49,7 @@
                            style="margin-top: 10px;">First Name</label>
                         <div class = "col-sm-8">
                             <g:textField name= "firstname" class="form-control" placeholder = "Enter your firstname"
-                                         style="padding:5px; margin:5px;"/>
+                                         style="padding:5px; margin:5px;" value="${myuser.firstName}"/>
                         </div>
                 </div>
                 <div class = "form-group form-group-lg">
@@ -57,23 +57,24 @@
                            style="margin-top: 10px;">Last Name</label>
                         <div class = "col-sm-8">
                             <g:textField name= "lastname" class = "form-control" placeholder = "Enter your lastname"
-                                         style="padding:5px; margin:5px;"/>
+                                         style="padding:5px; margin:5px;" value="${myuser.lastName}"/>
                         </div>
                 </div>
-                <div class = "form-group form-group-lg">
+                <div class = "form-group form-group-lg ${hasErrors(bean : myuser ,field :'emailid', 'has-error')}">
                     <label for = "emailid" class = "col-sm-3 col-sm-offset-1 control-label"
-                           style="margin-top: 10px;">Email Id</label>
+                           style="margin-top: 10px;" >Email Id</label>
                         <div class = "col-sm-8">
                             <g:textField name= "emailid" class= "form-control" placeholder = "Enter your email"
-                                         style="padding:5px; margin:5px;"/>
+                                         style="padding:5px; margin:5px;" value="${myuser.email}"/>
+                            <g:renderErrors bean="${myuser}" field="emailid" />
                         </div>
                 </div>
-                <div class = "form-group form-group-lg">
+                <div class = "form-group form-group-lg ">
                     <label for = "myage" class = "col-sm-3 col-sm-offset-1 control-label" style="margin-top: 10px;">
                         Age</label>
                     <div class = "col-sm-8">
                         <g:textField name= "myage" class= "form-control" placeholder = "Enter your age"
-                                     style="padding:5px; margin:5px;"/>
+                                     style="padding:5px; margin:5px;" value="${myuser.age}"/>
                     </div>
                 </div>
                 <div class="form-group">
@@ -96,7 +97,13 @@
         gfhhfhjgjkbkbjkbnlnlnl;
         kgkhhgbhkgkghklhlhjlhjolhn
         lghghkgkgljhljhjlhlhjl;nl;
-        ljkhgkgkhkhkhjklhklhlhlh</p>
+        ljkhgkgkhkhkhjklhklhlhlh
+        efegwrtgwtgh2wthhththhhhhhh
+        wtwtwthwtwhhtwtehjhifheifhe
+        ejhehhehjehghergre
+        kehhekheghehgjkerhlghelr
+        eoghehgjhlgjhlehljkhel
+        </p>
 
     </content>
 

@@ -34,15 +34,22 @@
                 <th>Last Name</th>
                 <th>Email Id</th>
                 <th>Age</th>
+                <th>Edit</th>
+                 <th>Delete</th>
+
             </thead>
 
             <g:each var = "list" in = "${allusers}">
                 <tr class="${list.age >= 100 ? 'bg-danger' : 'bg-info'}">
-                    <td >${list.id}</td>
+                    <td ><g:link controller="user" action="show" id="${list.id}">
+                        ${list.id}
+                    </g:link></td>
                     <td>${list.firstName}</td>
                     <td >${list.lastName}</td>
                     <td >${list.email} </td>
                     <td >${list.age}</td>
+                    <td><g:link controller="user" action="edit" id="${list.id}">EDIT</g:link></td>
+                    <td><g:link controller="user" action="delete" id="${list.id}">DELETE</g:link></td>
                 </tr>
 
             </g:each>
