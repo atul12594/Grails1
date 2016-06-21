@@ -16,6 +16,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/jquery.min.css"></script>
     <script src="js/bootstrapcdn.min.css"></script>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <asset:stylesheet src = "bootstrap.min.css"/>
@@ -55,7 +56,7 @@
                     <span class = "icon-bar"></span>
                 </button>
             </div>
-            <a class="navbar-brand " id= "a1" href="#">Brand</a>
+            <a class="navbar-brand " id= "a1" href="#"><i class="fa fa-book">Brand</i></a>
             <div class="collapse navbar-collapse " id="navbar-collapse3">
                 <ul class="nav navbar-nav navbar-right">
 
@@ -66,7 +67,7 @@
             </div>
         </div>
     </nav>
-    <div class="container text-center ">
+    <div class="container  ">
         <div class="row">
             <div class="col-sm-10">
 

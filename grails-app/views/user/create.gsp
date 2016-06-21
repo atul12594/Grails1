@@ -18,7 +18,7 @@
             width: 60%;
             margin: auto;
             padding: 4%;
-            background-color:#337ab7;
+           /* background-color:#337ab7;*/
             border-radius: 20px;
 
 
@@ -60,16 +60,16 @@
                                          style="padding:5px; margin:5px;" value="${myuser.lastName}"/>
                         </div>
                 </div>
-                <div class = "form-group form-group-lg ${hasErrors(bean : myuser ,field :'emailid', 'has-error')}">
+                <div class = "form-group form-group-lg  ${hasErrors(bean : myuser ,field :'email', 'has-error')} ">
                     <label for = "emailid" class = "col-sm-3 col-sm-offset-1 control-label"
                            style="margin-top: 10px;" >Email Id</label>
                         <div class = "col-sm-8">
                             <g:textField name= "emailid" class= "form-control" placeholder = "Enter your email"
                                          style="padding:5px; margin:5px;" value="${myuser.email}"/>
-                            <g:renderErrors bean="${myuser}" field="emailid" />
+                            <g:renderErrors bean="${myuser}" field="email" />
                         </div>
                 </div>
-                <div class = "form-group form-group-lg ">
+                <div class = "form-group form-group-lg  ${hasErrors(bean : myuser ,field :'age', 'has-error')}">
                     <label for = "myage" class = "col-sm-3 col-sm-offset-1 control-label" style="margin-top: 10px;">
                         Age</label>
                     <div class = "col-sm-8">
@@ -90,7 +90,8 @@
 
     <content tag="sidebarContent">
 
-        <p>Instuctions</p>
+        <p><strong>INSTRUCTIONS</strong></p>
+
         <p>gsffhsfxfhkxfhxfxxhxfx
         hfhffxfhchcjvjkh
         lvjfhxhcvgjvkb
